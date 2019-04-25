@@ -1,4 +1,4 @@
-# BcchAngularExercise
+# BCCH Digital Angular Exercise
 
 ## Exercise Instructions:
 
