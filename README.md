@@ -2,7 +2,7 @@
 
 ## Exercise Instructions:
 
-- To initiate the exercise, fork this repository as private, and invite <nigel.stewart@bcchdigital.ca>, <juan.tellez@bcchdigital.ca>, and <rachel.teo@bcchdigital.ca> with read-only access. Starting with this bootstrapped Angular project, provide a solution to the project requirements stated below.
+- To initiate the exercise, fork this repository as private, and invite <nigel.stewart@bcchdigital.ca>, <malinda.kulasekare@bcchdigital.ca>, and <rachel.teo@bcchdigital.ca> with read-only access. Starting with this bootstrapped Angular project, provide a solution to the project requirements stated below.
 
 - Project dependencies can be installed via `npm install` within project root.
 
