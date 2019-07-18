@@ -13,10 +13,10 @@ export class AppComponent {
   public opFunc: any;
   public result: any;
 
+  //executed when number buttons (0-9) are clicked
   setNumber(buttonID: string) {
     if (this.num1) {
       if (this.operator) {
-        console.log(document.getElementById(buttonID).innerHTML);
         this.num2 = document.getElementById(buttonID).innerHTML;
       } else {
         window.alert('Please add operator');
@@ -26,9 +26,9 @@ export class AppComponent {
     }
   }
 
+  //executed when operator buttons (+-*/) are clicked
   setOperator(buttonID: string) {
     if (this.num1) {
-      console.log(document.getElementById(buttonID).innerHTML);
       this.operator = document.getElementById(buttonID).innerHTML;
       this.setOpFunc(buttonID);
     } else {
@@ -36,22 +36,20 @@ export class AppComponent {
     }
   }
 
+  //called directly from setOperator when operator button is clicked
   setOpFunc(buttonId) {
     if (buttonId === 10) {
       this.opFunc = this.divide;
-      console.log(this.opFunc);
     } else if (buttonId === 11) {
       this.opFunc = this.times;
-      console.log(this.opFunc);
     } else if (buttonId === 12) {
       this.opFunc = this.minus;
-      console.log(this.opFunc);
     } else {
       this.opFunc = this.plus;
-      console.log(this.opFunc);
     }
   }
 
+  //executed on "C" button
   clear() {
     this.num1 = undefined;
     this.num2 = undefined;
@@ -60,6 +58,7 @@ export class AppComponent {
     this.result = undefined;
   }
 
+  //executed on "=" button
   calculate() {
     if (
       this.num1 !== undefined &&
@@ -70,7 +69,6 @@ export class AppComponent {
       const caluclation = this.opFunc(this.num1, this.num2);
       const rounded = +caluclation.toFixed(6); //rounding to 6 decimal places (max)
       this.result = rounded;
-      console.log(this.result);
     } else {
       window.alert('Please add valid calculation');
     }
