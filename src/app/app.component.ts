@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bcch-angular-exercise';
+  public num1;
 
   clickButton(buttonID) {
-    window.alert('button is pressed!');
     console.log(document.getElementById(buttonID).innerHTML);
+    this.num1 = document.getElementById(buttonID).innerHTML;
+    console.log(this.num1);
   }
 }
