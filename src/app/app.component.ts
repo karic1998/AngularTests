@@ -10,5 +10,6 @@ export class AppComponent {
 
   clickButton() {
     window.alert('button is pressed!');
+    console.log(document.getElementById('c').innerHTML);
   }
 }
