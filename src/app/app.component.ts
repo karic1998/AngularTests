@@ -10,12 +10,13 @@ export class AppComponent {
   public num1: string;
   public num2: string;
   public operator: string;
+  public opFunc: any;
+  public result: any;
 
   setNumber(buttonID: string) {
     if (this.num1) {
       console.log(document.getElementById(buttonID).innerHTML);
       this.num2 = document.getElementById(buttonID).innerHTML;
-      console.log(this.num1);
     } else {
       this.num1 = document.getElementById(buttonID).innerHTML;
     }
@@ -25,9 +26,25 @@ export class AppComponent {
     if (this.num1) {
       console.log(document.getElementById(buttonID).innerHTML);
       this.operator = document.getElementById(buttonID).innerHTML;
-      console.log(this.operator);
+      this.setOpFunc(buttonID);
     } else {
       window.alert('Add your number first!');
+    }
+  }
+
+  setOpFunc(buttonId) {
+    if (buttonId === 10) {
+      this.opFunc = this.divide;
+      console.log(this.opFunc);
+    } else if (buttonId === 11) {
+      this.opFunc = this.times;
+      console.log(this.opFunc);
+    } else if (buttonId === 12) {
+      this.opFunc = this.minus;
+      console.log(this.opFunc);
+    } else {
+      this.opFunc = this.plus;
+      console.log(this.opFunc);
     }
   }
 
@@ -35,5 +52,32 @@ export class AppComponent {
     this.num1 = undefined;
     this.num2 = undefined;
     this.operator = undefined;
+    this.opFunc = undefined;
+    this.result = undefined;
+  }
+
+  calculate() {
+    if (this.num1 && this.num2 && this.operator && this.opFunc) {
+      this.result = this.opFunc(this.num1, this.num2);
+    } else {
+      window.alert('Please add valid calculation');
+    }
+  }
+
+  //operator functions
+  plus(num1, num2) {
+    return num1 + num2;
+  }
+
+  minus(num1, num2) {
+    return num1 - num2;
+  }
+
+  times(num1, num2) {
+    return num1 * num2;
+  }
+
+  divide(num1, num2) {
+    return num1 / num2;
   }
 }
