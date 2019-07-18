@@ -13,11 +13,27 @@ export class AppPage {
     return element(by.id('13'));
   }
 
+  getMinusButton() {
+    return element(by.id('12'));
+  }
+
+  getDivideButton() {
+    return element(by.id('10'));
+  }
+
+  getTimesButton() {
+    return element(by.id('11'));
+  }
+
   getCalculatorDisplay() {
     return element(by.css('.display'));
   }
 
-  getNumberButton() {
+  getNumberButton1() {
+    return element(by.id('4'));
+  }
+
+  getNumberButton2() {
     return element(by.id('2'));
   }
 
