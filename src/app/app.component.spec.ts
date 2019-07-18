@@ -28,4 +28,40 @@ describe('AppComponent', () => {
       'Welcome to the Calculator'
     );
   });
+
+  describe('plus operator function', () => {
+    it('should add two numbers together', () => {
+      const fixture = TestBed.createComponent(AppComponent);
+      const instance = fixture.debugElement.componentInstance;
+      const result = instance.plus(1, 4);
+      expect(result).toEqual(5);
+    });
+  });
+
+  describe('minus operator function', () => {
+    it('should subtract two numbers', () => {
+      const fixture = TestBed.createComponent(AppComponent);
+      const instance = fixture.debugElement.componentInstance;
+      const result = instance.minus(4, 1);
+      expect(result).toEqual(3);
+    });
+  });
+
+  describe('divide operator function', () => {
+    it('should divide two numbers', () => {
+      const fixture = TestBed.createComponent(AppComponent);
+      const instance = fixture.debugElement.componentInstance;
+      const result = instance.divide(4, 2);
+      expect(result).toEqual(2);
+    });
+  });
+
+  describe('times operator function', () => {
+    it('should multiply two numbers', () => {
+      const fixture = TestBed.createComponent(AppComponent);
+      const instance = fixture.debugElement.componentInstance;
+      const result = instance.times(4, 2);
+      expect(result).toEqual(8);
+    });
+  });
 });
