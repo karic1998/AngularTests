@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bcch-angular-exercise';
+
+  clickButton() {
+    window.alert('button is pressed!');
+  }
 }
