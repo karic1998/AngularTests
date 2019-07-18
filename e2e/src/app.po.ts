@@ -8,4 +8,16 @@ export class AppPage {
   getTitleText() {
     return element(by.css('app-root h1')).getText() as Promise<string>;
   }
+
+  getPlusButton() {
+    return element(by.id('13'));
+  }
+
+  getCalculatorDisplay() {
+    return element(by.css('.display'));
+  }
+
+  getNumberButton() {
+    return element(by.id('2'));
+  }
 }
