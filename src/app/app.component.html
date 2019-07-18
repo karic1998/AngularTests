@@ -3,33 +3,33 @@
   <h1>Welcome to the Calculator</h1>
 </div>
 <div class="calculator">
-  <div class="display">{{ num1 }}</div>
+  <div class="display">{{ num1 }} {{ operator }} {{ num2 }}</div>
   <div class="calculator-buttons">
     <button class="c-button clear" id="14" (click)="clickButton(14)">C</button>
-    <button class="c-button divide" id="10" (click)="clickButton(10)">
+    <button class="c-button divide" id="10" (click)="setOperator(10)">
       &divide;
     </button>
 
-    <button class="c-button" id="7" (click)="clickButton(7)">7</button>
-    <button class="c-button" id="8" (click)="clickButton(8)">8</button>
-    <button class="c-button" id="9" (click)="clickButton(9)">9</button>
-    <button class="c-button times" id="11" (click)="clickButton(11)">
+    <button class="c-button" id="7" (click)="setNumber(7)">7</button>
+    <button class="c-button" id="8" (click)="setNumber(8)">8</button>
+    <button class="c-button" id="9" (click)="setNumber(9)">9</button>
+    <button class="c-button times" id="11" (click)="setOperator(11)">
       &times;
     </button>
 
-    <button class="c-button" id="4" (click)="clickButton(4)">4</button>
-    <button class="c-button" id="5" (click)="clickButton(5)">5</button>
-    <button class="c-button" id="6" (click)="clickButton(6)">6</button>
-    <button class="c-button minus" id="12" (click)="clickButton(12)">
+    <button class="c-button" id="4" (click)="setNumber(4)">4</button>
+    <button class="c-button" id="5" (click)="setNumber(5)">5</button>
+    <button class="c-button" id="6" (click)="setNumber(6)">6</button>
+    <button class="c-button minus" id="12" (click)="setOperator(12)">
       &minus;
     </button>
 
-    <button class="c-button" id="1" (click)="clickButton(1)">1</button>
-    <button class="c-button" id="2" (click)="clickButton(2)">2</button>
-    <button class="c-button" id="3" (click)="clickButton(3)">3</button>
-    <button class="c-button add" id="13" (click)="clickButton(13)">+</button>
+    <button class="c-button" id="1" (click)="setNumber(1)">1</button>
+    <button class="c-button" id="2" (click)="setNumber(2)">2</button>
+    <button class="c-button" id="3" (click)="setNumber(3)">3</button>
+    <button class="c-button add" id="13" (click)="setOperator(13)">+</button>
 
-    <button class="c-button" id="0" (click)="clickButton(0)">0</button>
-    <button class="c-button equals" id="15" (click)="clickButton(15)">=</button>
+    <button class="c-button" id="0" (click)="setNumber(0)">0</button>
+    <button class="c-button equals" id="15" (click)="setNumber(15)">=</button>
   </div>
 </div>
