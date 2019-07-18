@@ -3,27 +3,33 @@
   <h1>Welcome to the Calculator</h1>
 </div>
 <div class="calculator">
-  <div class="display" placeholder="0">Display!</div>
+  <div class="display">Display!</div>
   <div class="calculator-buttons">
-    <button class="c-button clear" id="c" (click)="clickButton()">C</button>
-    <button class="c-button divide" (click)="clickButton()">&divide;</button>
+    <button class="c-button clear" id="14" (click)="clickButton(14)">C</button>
+    <button class="c-button divide" id="10" (click)="clickButton(10)">
+      &divide;
+    </button>
 
-    <button class="c-button" (click)="clickButton()">7</button>
-    <button class="c-button" (click)="clickButton()">8</button>
-    <button class="c-button" (click)="clickButton()">9</button>
-    <button class="c-button times" (click)="clickButton()">&times;</button>
+    <button class="c-button" id="7" (click)="clickButton(7)">7</button>
+    <button class="c-button" id="8" (click)="clickButton(8)">8</button>
+    <button class="c-button" id="9" (click)="clickButton(9)">9</button>
+    <button class="c-button times" id="11" (click)="clickButton(11)">
+      &times;
+    </button>
 
-    <button class="c-button" (click)="clickButton()">4</button>
-    <button class="c-button" (click)="clickButton()">5</button>
-    <button class="c-button" (click)="clickButton()">6</button>
-    <button class="c-button minus" (click)="clickButton()">&minus;</button>
+    <button class="c-button" id="4" (click)="clickButton(4)">4</button>
+    <button class="c-button" id="5" (click)="clickButton(5)">5</button>
+    <button class="c-button" id="6" (click)="clickButton(6)">6</button>
+    <button class="c-button minus" id="12" (click)="clickButton(12)">
+      &minus;
+    </button>
 
-    <button class="c-button" (click)="clickButton()">1</button>
-    <button class="c-button" (click)="clickButton()">2</button>
-    <button class="c-button" (click)="clickButton()">3</button>
-    <button class="c-button add" (click)="clickButton()">+</button>
+    <button class="c-button" id="1" (click)="clickButton(1)">1</button>
+    <button class="c-button" id="2" (click)="clickButton(2)">2</button>
+    <button class="c-button" id="3" (click)="clickButton(3)">3</button>
+    <button class="c-button add" id="13" (click)="clickButton(13)">+</button>
 
-    <button class="c-button" (click)="clickButton()">0</button>
-    <button class="c-button equals" (click)="clickButton()">=</button>
+    <button class="c-button" id="0" (click)="clickButton(0)">0</button>
+    <button class="c-button equals" id="15" (click)="clickButton(15)">=</button>
   </div>
 </div>

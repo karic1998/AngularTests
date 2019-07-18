@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'bcch-angular-exercise';
 
-  clickButton() {
+  clickButton(buttonID) {
     window.alert('button is pressed!');
-    console.log(document.getElementById('c').innerHTML);
+    console.log(document.getElementById(buttonID).innerHTML);
   }
 }
