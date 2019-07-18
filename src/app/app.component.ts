@@ -26,4 +26,10 @@ export class AppComponent {
     this.operator = document.getElementById(buttonID).innerHTML;
     console.log(this.operator);
   }
+
+  clear() {
+    this.num1 = undefined;
+    this.num2 = undefined;
+    this.operator = undefined;
+  }
 }
