@@ -3,7 +3,9 @@
   <h1>Welcome to the Calculator</h1>
 </div>
 <div class="calculator" ng-app="myApp" ng-controller="ng-controller">
-  <div class="display" *ngIf="result; else noResult">{{ result }}</div>
+  <div class="display" *ngIf="result !== undefined; else noResult">
+    {{ result }}
+  </div>
 
   <ng-template #noResult class="display">
     <div class="display">{{ num1 }} {{ operator }} {{ num2 }}</div>

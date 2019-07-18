@@ -66,6 +66,7 @@ export class AppComponent {
       const caluclation = this.opFunc(this.num1, this.num2);
       const rounded = +caluclation.toFixed(6); //rounding to 6 decimal places (max)
       this.result = rounded;
+      console.log(this.result);
     } else {
       window.alert('Please add valid calculation');
     }
