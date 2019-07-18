@@ -15,8 +15,12 @@ export class AppComponent {
 
   setNumber(buttonID: string) {
     if (this.num1) {
-      console.log(document.getElementById(buttonID).innerHTML);
-      this.num2 = document.getElementById(buttonID).innerHTML;
+      if (this.operator) {
+        console.log(document.getElementById(buttonID).innerHTML);
+        this.num2 = document.getElementById(buttonID).innerHTML;
+      } else {
+        window.alert('Please add operator');
+      }
     } else {
       this.num1 = document.getElementById(buttonID).innerHTML;
     }
