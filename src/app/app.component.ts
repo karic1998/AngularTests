@@ -11,7 +11,7 @@ export class AppComponent {
   public num2: string;
   public operator: string;
   public opFunc: any;
-  public result: any;
+  public result: string;
 
   setNumber(buttonID: string) {
     if (this.num1) {
@@ -66,7 +66,7 @@ export class AppComponent {
 
   //operator functions
   plus(num1, num2) {
-    return num1 + num2;
+    return parseInt(num1) + parseInt(num2);
   }
 
   minus(num1, num2) {
