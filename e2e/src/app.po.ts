@@ -20,4 +20,8 @@ export class AppPage {
   getNumberButton() {
     return element(by.id('2'));
   }
+
+  getEqualsButton() {
+    return element(by.id('15'));
+  }
 }
