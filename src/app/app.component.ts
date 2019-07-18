@@ -11,7 +11,7 @@ export class AppComponent {
   public num2: string;
   public operator: string;
   public opFunc: any;
-  public result: string;
+  public result: any;
 
   setNumber(buttonID: string) {
     if (this.num1) {
@@ -57,8 +57,15 @@ export class AppComponent {
   }
 
   calculate() {
-    if (this.num1 && this.num2 && this.operator && this.opFunc) {
-      this.result = this.opFunc(this.num1, this.num2);
+    if (
+      this.num1 !== undefined &&
+      this.num2 !== undefined &&
+      this.operator &&
+      this.opFunc
+    ) {
+      const caluclation = this.opFunc(this.num1, this.num2);
+      const rounded = +caluclation.toFixed(6); //rounding to 6 decimal places (max)
+      this.result = rounded;
     } else {
       window.alert('Please add valid calculation');
     }
