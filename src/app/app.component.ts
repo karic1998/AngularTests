@@ -22,9 +22,13 @@ export class AppComponent {
   }
 
   setOperator(buttonID: string) {
-    console.log(document.getElementById(buttonID).innerHTML);
-    this.operator = document.getElementById(buttonID).innerHTML;
-    console.log(this.operator);
+    if (this.num1) {
+      console.log(document.getElementById(buttonID).innerHTML);
+      this.operator = document.getElementById(buttonID).innerHTML;
+      console.log(this.operator);
+    } else {
+      window.alert('Add your number first!');
+    }
   }
 
   clear() {
