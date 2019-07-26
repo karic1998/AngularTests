@@ -64,4 +64,27 @@ describe('AppComponent', () => {
       expect(result).toEqual(8);
     });
   });
+
+  describe('setNumber', () => {
+    it('should set num1 when num1 is undefined', () => {
+      const fixture = TestBed.createComponent(AppComponent);
+      const instance = fixture.debugElement.componentInstance;
+      console.log('num1', instance.num1);
+      instance.setNumber('2');
+      console.log('num1 after define', instance.num1);
+      expect(instance.num1).toEqual('2');
+    });
+
+    it('should set num2 when num1 is defined and operator is defined', () => {
+      const fixture = TestBed.createComponent(AppComponent);
+      const instance = fixture.debugElement.componentInstance;
+      instance.num1 = '3';
+      instance.operator = '+';
+      console.log('num1', instance.num1);
+      instance.setNumber('7');
+      console.log('num1 after define', instance.num1);
+      expect(instance.num1).toEqual('3');
+      expect(instance.num2).toEqual('7');
+    });
+  });
 });
