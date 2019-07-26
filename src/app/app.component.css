@@ -1,5 +1,6 @@
 h1 {
   margin: 40px;
+  font-family: 'Muli', sans-serif;
 }
 
 .calculator {
@@ -7,11 +8,15 @@ h1 {
   border: 2px solid;
   border-radius: 5px;
   margin: 0 auto;
+  background-color: #224662;
 }
 
 .display {
-  background: none;
-  /* background-color: #f9f7f7; */
+  max-width: 350px;
+  border-radius: 5px;
+  background: #fcf9f9;
+  position: relative;
+  margin: 20px;
   box-shadow: none;
   border: none;
   width: 100%;
@@ -30,13 +35,20 @@ h1 {
 }
 
 .c-button {
-  background: rgb(150, 139, 139);
   font-size: 20px;
   cursor: pointer;
   padding: 2px;
   color: #f9f7f7;
   border-radius: 5px;
   border: 1px solid;
+}
+
+.c-button.op {
+  background: #f0ac4e;
+}
+
+.c-button.num {
+  background: #5bc0de;
 }
 
 .clear {
