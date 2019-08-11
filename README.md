@@ -1,3 +1,1 @@
-# BCCH Digital Angular Exercise
-
-## Test finished.
+Simple calculator app built with Angular
