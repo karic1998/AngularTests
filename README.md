@@ -1,4 +1,4 @@
-#Simple calculator app built with Angular
+## Simple calculator app built with Angular
 
 e2e testing with protractor and unit testing with Karma
 
