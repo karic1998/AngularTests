@@ -44,5 +44,18 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.4.5"
-  }
+  },
+  "description": "A simple calculator app built with Angular.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hazthompson/angular-calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hazthompson/angular-calculator/issues"
+  },
+  "homepage": "https://github.com/hazthompson/angular-calculator#readme"
 }

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bcch-angular-exercise';
+  title = 'Kalkulator za naseg malog Senada';
   public num1: string;
   public num2: string;
   public operator: string;

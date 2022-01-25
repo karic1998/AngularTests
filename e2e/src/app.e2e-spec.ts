@@ -19,7 +19,7 @@ describe('workspace-project App', () => {
       expect(page.getPlusButton().getText()).toEqual('+');
     });
 
-    it('should display plus symbol in calculator window', async () => {
+    it('should display plus symbol in calculator window', () => {
       page.navigateTo();
       page.getNumberButton1().click();
       page.getPlusButton().click();
@@ -69,18 +69,5 @@ describe('workspace-project App', () => {
       page.getEqualsButton().click();
       expect(page.getCalculatorDisplay().getText()).toEqual('8');
     });
-  });
-
-  afterEach(async () => {
-    // Assert that there are no errors emitted from the browser
-    const logs = await browser
-      .manage()
-      .logs()
-      .get(logging.Type.BROWSER);
-    expect(logs).not.toContain(
-      jasmine.objectContaining({
-        level: logging.Level.SEVERE
-      } as logging.Entry)
-    );
   });
 });
